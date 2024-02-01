@@ -1,0 +1,286 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+/* Set default styles for body */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  
+}
+
+/* Style headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* Style forms */
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  font-family: "Robot", sans-serif;
+  font-weight: 100;
+  font-size: .9rem;
+  padding: 0.5rem;
+  border: 1px solid #ed184b;
+  border-radius: .50rem;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+  font-size: 1rem;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 16px;
+  background-color: #ed184b;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 10em;
+  
+}
+
+
+.split-button {
+  position: relative;
+  display: inline-block;
+}
+
+.button-primary {
+  background-color: #ed184b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.button-dropdown {
+  background-color: #ed184b;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 160px;
+  display: none;
+}
+
+.dropdown-menu a {
+  color: #ed184b;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f2f2f2;
+}
+
+.split-button:hover .dropdown-menu {
+  display: block;
+}
+
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #ed184b;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-field{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "\2713";
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: #ed184b;
+  border-radius: 4px;
+  height: 20px;
+  
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #ed184b;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: 2px;
+  background-color: #ed184b;
+  border-radius: 50%;
+}
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #555;
+  background-color: #fff;
+  background-image:url("/Users/ub-cbi-rj/Desktop/CBI/CSSLIB/down.svg") ;
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%;
+  background-size: 1.2em auto;
+  border: 1px solid #ed184b;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+select option:first-child {
+  color: #ed184b;
+}
+select option {
+  background-color: #ed184b;
+  color: #fff;
+}
+
+select option:hover {
+  background-color: #fa97ae;
+}    
+
+/* Style tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  font-family: "Roboto",sans-serif;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+  background-color:#eeeeee;
+}
+
+/* Style spans */
+span {
+  font-weight: bold;
+  color: #ed184b;
+}
+
+/* Style links */
+a {
+  color: #ed184b;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ed184b;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-family: "Roboto",sans-serif;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+/* Define media breakpoints */
+@media (min-width: 576px) {
+  /* Add styles for small screens here */
+}
+
+@media (min-width: 768px) {
+  /* Add styles for medium screens here */
+}
+
+@media (min-width: 992px) {
+  /* Add styles for large screens here */
+}
+
+@media (min-width: 1200px) {
+  /* Add styles for extra-large screens here */
+}

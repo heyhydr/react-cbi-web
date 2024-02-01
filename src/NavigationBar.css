@@ -1,0 +1,35 @@
+/* NavigationBar.css */
+
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Align logo and menu at opposite ends */
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust the height of the logo as needed */
+    width: auto; /* Maintain the aspect ratio of the logo */
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  nav a:hover {
+    
+    color:#ed184b;
+  }
+  
+  
